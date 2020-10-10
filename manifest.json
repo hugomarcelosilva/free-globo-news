@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "FreeAdBlock",
+  "description": "Remove sign message on globo news pages.",
+  "version": "0.1",
+
+  "icons": { "128": "free.png" },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.globo.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
