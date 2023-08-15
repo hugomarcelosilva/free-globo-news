@@ -1,12 +1,13 @@
 var myInterval;
 
 myInterval = setInterval(function () {
-  if (document.getElementById('detecta-adblock') != null) {
+  if (document.getElementsByClassName('barreiraJornada') != null) {
     document.body.style.overflow = 'auto';
 
-    if (document.getElementById('detecta-adblock') != null) {
-      document.getElementById('detecta-adblock').style.display = 'none';
-    }
+    document.documentElement.style = '';
+    document.getElementsByClassName('barreiraJornada')[0].style.visibility = 'hidden';
+
+    document.getElementById('detecta-adblock').style.display = 'none';
 
     window.clearInterval(myInterval);
   } else {
