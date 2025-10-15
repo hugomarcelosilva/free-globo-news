@@ -3,7 +3,7 @@
 
   "name": "FreeAdBlock",
   "description": "Remove sign message on globo news pages.",
-  "version": "0.1",
+  "version": "0.2",
 
   "icons": { "128": "free.png" },
 
